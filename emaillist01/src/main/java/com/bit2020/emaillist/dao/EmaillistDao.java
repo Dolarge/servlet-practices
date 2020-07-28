@@ -57,7 +57,7 @@ public class EmaillistDao {
 		return result;
 	}
 
-	public List<EmaillistVo> selectList() {
+	public List<EmaillistVo> findAll() {
 		List<EmaillistVo> result = new ArrayList<>();
 		
 		Connection connection = null;
@@ -76,7 +76,7 @@ public class EmaillistDao {
 			stmt = connection.createStatement();
 			
 			// 4. SQL 실행
-			String sql = "select no, first_name, last_name, email from emaillist";
+			String sql = "select no, first_name, last_name, email from emaillist order by no desc";
 			rs = stmt.executeQuery(sql);
 			
 			while(rs.next()) {

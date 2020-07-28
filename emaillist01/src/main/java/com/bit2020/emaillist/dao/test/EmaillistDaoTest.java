@@ -13,7 +13,7 @@ public class EmaillistDaoTest {
 	}
 
 	public static void testSelectList() {
-		List<EmaillistVo> list = new EmaillistDao().selectList();
+		List<EmaillistVo> list = new EmaillistDao().findAll();
 		if(list.size() == 2) {
 			System.out.println("성공");
 		} else {
