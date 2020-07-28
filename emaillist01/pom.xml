@@ -9,4 +9,11 @@
 	</parent>
 	<artifactId>emaillist01</artifactId>
 	<packaging>war</packaging>
+	
+	<dependencies>
+	</dependencies>
+	
+	<build>
+		<finalName>emaillist01</finalName>	
+	</build>		
 </project>
